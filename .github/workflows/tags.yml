@@ -10,6 +10,11 @@ jobs:
         containers: [1, 2, 3]
     name: E2E on Node v${{ matrix.node }}
     steps:
+      - name: Dump GitHub context
+        env:
+          GITHUB_CONTEXT: ${{ toJson(github) }}
+        run: echo "$GITHUB_CONTEXT"
+    steps:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
