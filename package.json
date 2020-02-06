@@ -4,7 +4,8 @@
   "description": "Example running Cypress tests inside GitHub Action",
   "main": "index.js",
   "scripts": {
-    "test": "cypress run"
+    "test": "cypress run",
+    "open": "cypress open"
   },
   "repository": {
     "type": "git",
