@@ -21,7 +21,7 @@ jobs:
         with:
           record: true
           parallel: true
-          group: 'Actions example'
+          group: Actions example ${{ matrix.containers }}
         env:
           # pass the Dashboard record key as an environment variable
           CYPRESS_RECORD_KEY: ${{ secrets.CYPRESS_RECORD_KEY }}
