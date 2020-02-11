@@ -3,5 +3,4 @@
 /// <reference types="Cypress" />
 it("works", () => {
   cy.wait(5000);
-  throw new Error('a')
 });
